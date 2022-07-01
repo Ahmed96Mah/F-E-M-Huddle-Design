@@ -1,0 +1,305 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+main {
+  margin-top: 3.5rem;
+  div {
+    &.section {
+      margin: 0rem 5vw 2.5rem 5vw;
+      border-radius: 1rem;
+      box-shadow: 0rem 0rem 1rem rgba(211, 211, 211, 0.5);
+      padding-top: 3.5rem;
+      padding-bottom: 1rem;
+      div {
+        p {
+          text-align: center;
+          font-family: 'Open Sans', sans-serif;
+          &.title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 1.3rem;
+            margin-bottom: 0.9rem;
+          }
+          &.content {
+            color: v.$grayish-blue;
+            font-weight: 300;
+            font-size: 0.85rem;
+            line-height: 1.3rem;
+            padding: 0rem 3rem;
+            margin-top: 0rem;
+          }
+        }
+      }
+      img {
+        width: 65vw;
+        margin-left: 12.5vw;
+        margin-bottom: 2rem;
+      }
+    }
+    &.end {
+      position: relative;
+      bottom: -6.5rem;
+      width: 93vw;
+      margin: 2.5rem 2.5vw 2.5rem 2.5vw;
+      border-radius: 1rem;
+      box-shadow: 0rem 0rem 1rem rgba(211, 211, 211, 0.5);
+      background-color: v.$white-clr;
+      p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        margin: 2.5rem 0rem 0.5rem 0rem;
+        font-size: 1.1rem;
+      }
+      button {
+        cursor: pointer;
+        font-family: 'Open Sans', sans-serif;
+        margin: 1rem 0rem 2.5rem 0rem;
+        box-shadow: 0rem 0.2rem 0.3rem lightgray;
+        @include m.buttonStyles(
+          v.$white-clr,
+          0.7rem,
+          700,
+          v.$pink-clr,
+          v.$pink-clr,
+          1.5rem,
+          0.8rem,
+          3.3rem
+        );
+        &:hover {
+          background-color: v.$light-pink-clr;
+          border-color: transparent;
+        }
+      }
+    }
+    &:nth-child(3) {
+      margin-bottom: 0rem;
+    }
+    &:nth-child(4) {
+      margin-top: 0rem;
+    }
+  }
+
+  /* ----------------------- Media Queries ----------------------- */
+  @include m.flippedMobileScreens(41.25em, 53.75em, 26.25em) {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+    div {
+      &.section {
+        width: 75vw;
+        img {
+          width: 40vw;
+          margin: 0rem 2rem 2rem 17.5vw;
+        }
+      }
+      &.end {
+        width: 60vw;
+      }
+    }
+  }
+  @include m.padScreens(47.813em, 63.938em) {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    margin-top: 7rem;
+    div {
+      &.section {
+        width: 85vw;
+        box-shadow: 0rem 0rem 1rem rgba(211, 211, 211, 0.5);
+        padding-bottom: 2rem;
+        padding-left: 1.5rem;
+        div {
+          width: 50vw;
+          margin-left: 0rem;
+          p {
+            text-align: left;
+            &.title {
+              font-weight: 600;
+              font-size: 1.5rem;
+              padding: 0rem 3rem;
+              margin-bottom: 0.9rem;
+              margin-top: 0rem;
+            }
+            &.content {
+              font-weight: 400;
+              font-size: 1rem;
+              line-height: 1.5rem;
+              padding: 0rem 3rem;
+            }
+          }
+        }
+        img {
+          width: 25vw;
+          margin: 0rem 2rem 2rem 2vw;
+        }
+        &:nth-child(2) {
+          div {
+            p {
+              padding-left: 2rem;
+            }
+          }
+          img {
+            margin: 0rem 2rem 2rem 4vw;
+          }
+        }
+      }
+      &.end {
+        bottom: -8rem;
+        width: 65vw;
+        p {
+          font-weight: 600;
+          margin: 4rem 0rem 1rem 0rem;
+          font-size: 1.5rem;
+        }
+        button {
+          margin: 1rem 0rem 2.5rem 0rem;
+          @include m.buttonStyles(
+            v.$white-clr,
+            1rem,
+            500,
+            v.$pink-clr,
+            v.$pink-clr,
+            3rem,
+            1.1rem,
+            4.8rem
+          );
+        }
+      }
+      &:nth-child(3) {
+        margin-bottom: 0rem;
+      }
+      &:nth-child(4) {
+        margin-top: 2.7rem;
+      }
+    }
+  }
+  @include m.flippedPadScreens(64em, 75em, 37.5em) {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    margin-top: 10rem;
+    div {
+      &.section {
+        width: 80vw;
+        box-shadow: 0rem 0rem 1rem rgba(211, 211, 211, 0.5);
+        padding-bottom: 2rem;
+        padding-left: 5rem;
+        div {
+          width: 40vw;
+          margin-left: 0rem;
+          p {
+            text-align: left;
+            &.title {
+              font-weight: 600;
+              font-size: 1.8rem;
+              padding: 0rem 3rem;
+              margin-bottom: 0.9rem;
+              margin-top: 0rem;
+            }
+            &.content {
+              font-weight: 400;
+              font-size: 1.1rem;
+              line-height: 1.5rem;
+              padding: 0rem 3rem;
+            }
+          }
+        }
+        img {
+          width: 28vw;
+          margin: 0rem 2rem 2rem 2vw;
+        }
+        &:nth-child(2) {
+          img {
+            margin: 0rem 2rem 2rem 4vw;
+          }
+        }
+      }
+      &.end {
+        bottom: -8rem;
+        width: 65vw;
+        p {
+          font-weight: 600;
+          margin: 4rem 0rem 1rem 0rem;
+          font-size: 2rem;
+        }
+        button {
+          margin: 1rem 0rem 2.5rem 0rem;
+          @include m.buttonStyles(
+            v.$white-clr,
+            1.2rem,
+            500,
+            v.$pink-clr,
+            v.$pink-clr,
+            3rem,
+            1.5rem,
+            6.5rem
+          );
+        }
+      }
+      &:nth-child(3) {
+        margin-bottom: 0rem;
+      }
+      &:nth-child(4) {
+        margin-top: 2.7rem;
+      }
+    }
+  }
+  @include m.wideScreens(43rem, 73.75rem) {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    margin-top: 10rem;
+    div {
+      &.section {
+        width: 80vw;
+        box-shadow: 0rem 0rem 1rem rgba(211, 211, 211, 0.5);
+        padding-bottom: 2rem;
+        padding-left: 5rem;
+        div {
+          width: 40vw;
+          margin-left: 0rem;
+          p {
+            text-align: left;
+            &.title {
+              font-weight: 600;
+              font-size: 1.8rem;
+              padding: 0rem 3rem;
+              margin-bottom: 0.9rem;
+              margin-top: 0rem;
+            }
+            &.content {
+              font-weight: 400;
+              font-size: 1.1rem;
+              line-height: 1.5rem;
+              padding: 0rem 3rem;
+            }
+          }
+        }
+        img {
+          width: 28vw;
+          margin: 0rem 2rem 2rem 2vw;
+        }
+      }
+      &.end {
+        bottom: -8rem;
+        width: 55vw;
+        p {
+          font-weight: 600;
+          margin: 4rem 0rem 1rem 0rem;
+          font-size: 2rem;
+        }
+        button {
+          margin: 1rem 0rem 2.5rem 0rem;
+          @include m.buttonStyles(
+            v.$white-clr,
+            1.2rem,
+            500,
+            v.$pink-clr,
+            v.$pink-clr,
+            3rem,
+            1.5rem,
+            6.5rem
+          );
+        }
+      }
+      &:nth-child(3) {
+        margin-bottom: 0rem;
+      }
+      &:nth-child(4) {
+        margin-top: 2.7rem;
+      }
+    }
+  }
+}
