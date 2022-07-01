@@ -1,0 +1,986 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+/* Media Queries */
+body {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: 1fr;
+  grid-template-areas: 'header' 'main' 'footer';
+  /* ----------------------- Media Queries ----------------------- */
+}
+body header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body header div#topHeader {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body header div#lowerHeader {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body header div#lowerHeader div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body main div.section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body main div.section.reverse {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+body main div.end {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+body footer div.footerContent .info .infoSection {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+body footer div.footerContent .info .infoSection.loc {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+body footer div.footerContent .social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 41.25em) and (max-width: 53.75em) and (max-height: 26.25em) {
+  body {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+  }
+}
+@media only screen and (min-width: 47.813em) and (max-width: 63.938em) {
+  body {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+  }
+  body header div#lowerHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body header div#lowerHeader div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  body footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  body footer div.footerContent {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body footer div.footerContent .info .infoSection {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  body footer div.footerContent .info .infoSection.loc {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  body footer div.footerContent .social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 64em) and (max-width: 75em) and (min-height: 37.5em) {
+  body {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+  }
+  body header div#lowerHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body header div#lowerHeader div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  body footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  body footer div.footerContent {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body footer div.footerContent .info .infoSection {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  body footer div.footerContent .info .infoSection.loc {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  body footer div.footerContent .social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media only screen and (min-height: 43rem) and (min-width: 73.75rem) {
+  body {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+  }
+  body header div#lowerHeader {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body header div#lowerHeader div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  body footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  body footer div.footerContent {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  body footer div.footerContent .info .infoSection {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  body footer div.footerContent .info .infoSection.loc {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  body footer div.footerContent .social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* ------------ Colors ------------ */
+header {
+  background-image: url('../images/bg-hero-mobile.svg');
+  background-position-y: 35%;
+  background-repeat: no-repeat;
+  background-color: hsl(193deg, 100%, 96%);
+  /* ----------------------- Media Queries ----------------------- */
+}
+header div#topHeader {
+  width: 90%;
+  margin: 2rem 0rem;
+}
+header div#topHeader img {
+  width: 7rem;
+}
+header div#topHeader button {
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0rem 0.2rem 0.3rem lightgray;
+  color: hsl(192deg, 100%, 9%);
+  font-size: 0.7rem;
+  font-weight: 700;
+  background-color: hsl(0deg, 0%, 100%);
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+  padding: 0.4rem 1.5rem;
+}
+header div#topHeader button:hover {
+  color: hsl(208deg, 11%, 55%);
+}
+header div#lowerHeader {
+  font-family: 'Open Sans', sans-serif;
+}
+header div#lowerHeader div h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 3.5rem 2rem 1.5rem 2rem;
+}
+header div#lowerHeader div p {
+  text-align: center;
+  margin: 0rem;
+  padding: 0rem 2.6rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+header div#lowerHeader div button {
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  margin: 2rem 0rem 3.5rem 0rem;
+  box-shadow: 0rem 0.2rem 0.3rem lightgray;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.7rem;
+  font-weight: 700;
+  background-color: hsl(322deg, 100%, 66%);
+  border: 1px solid hsl(322deg, 100%, 66%);
+  border-radius: 1.5rem;
+  padding: 0.8rem 3.3rem;
+}
+header div#lowerHeader div button:hover {
+  background-color: hsla(322deg, 100%, 66%, 0.6);
+  border-color: transparent;
+}
+header div#lowerHeader img {
+  width: 80vw;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 41.25em) and (max-width: 53.75em) and (max-height: 26.25em) {
+  header {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+  }
+  header div#lowerHeader img {
+    width: 75vw;
+  }
+}
+@media only screen and (min-width: 47.813em) and (max-width: 63.938em) {
+  header {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    background-image: url('../images/bg-hero-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: hsl(193deg, 100%, 96%);
+    padding-bottom: 2rem;
+  }
+  header div#topHeader {
+    width: 88%;
+    margin: 3.1rem 0rem 3.8rem 0rem;
+  }
+  header div#topHeader img {
+    width: 10rem;
+  }
+  header div#topHeader button {
+    box-shadow: 0rem 0.2rem 0.3rem lightgray;
+    color: hsl(192deg, 100%, 9%);
+    font-size: 0.85rem;
+    font-weight: 700;
+    background-color: hsl(0deg, 0%, 100%);
+    border: 1px solid hsl(0deg, 0%, 100%);
+    border-radius: 1.6rem;
+    padding: 0.7rem 3rem;
+  }
+  header div#topHeader button:hover {
+    color: hsl(208deg, 11%, 55%);
+  }
+  header div#lowerHeader {
+    width: 90%;
+  }
+  header div#lowerHeader div {
+    margin-right: 2rem;
+  }
+  header div#lowerHeader div h1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: left;
+    margin: 3rem 1rem 1.5rem 0rem;
+  }
+  header div#lowerHeader div p {
+    text-align: left;
+    margin: 0rem;
+    padding-right: 1rem;
+    padding-left: 0rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  header div#lowerHeader div button {
+    margin: 2rem 0rem 3.5rem 0rem;
+    box-shadow: 0rem 0.2rem 0.3rem lightgray;
+    color: hsl(0deg, 0%, 100%);
+    font-size: 0.85rem;
+    font-weight: 700;
+    background-color: hsl(322deg, 100%, 66%);
+    border: 1px solid hsl(322deg, 100%, 66%);
+    border-radius: 1.8rem;
+    padding: 1rem 4.1rem;
+  }
+  header div#lowerHeader img {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 64em) and (max-width: 75em) and (min-height: 37.5em) {
+  header {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    background-image: url('../images/bg-hero-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: hsl(193deg, 100%, 96%);
+    padding-bottom: 2rem;
+  }
+  header div#topHeader {
+    width: 88%;
+    margin: 3.1rem 0rem 3.8rem 0rem;
+  }
+  header div#topHeader img {
+    width: 12.5rem;
+  }
+  header div#topHeader button {
+    box-shadow: 0rem 0.2rem 0.3rem lightgray;
+    color: hsl(192deg, 100%, 9%);
+    font-size: 0.85rem;
+    font-weight: 700;
+    background-color: hsl(0deg, 0%, 100%);
+    border: 1px solid hsl(0deg, 0%, 100%);
+    border-radius: 1.6rem;
+    padding: 0.8rem 4rem;
+  }
+  header div#topHeader button:hover {
+    color: hsl(208deg, 11%, 55%);
+  }
+  header div#lowerHeader {
+    width: 88%;
+  }
+  header div#lowerHeader div {
+    margin-right: 1.5rem;
+  }
+  header div#lowerHeader div h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: left;
+    margin: 3rem 2rem 1.5rem 0rem;
+  }
+  header div#lowerHeader div p {
+    text-align: left;
+    margin: 0rem;
+    padding-left: 0rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+  header div#lowerHeader div button {
+    margin: 2rem 0rem 3.5rem 0rem;
+    box-shadow: 0rem 0.2rem 0.3rem lightgray;
+    color: hsl(0deg, 0%, 100%);
+    font-size: 0.85rem;
+    font-weight: 700;
+    background-color: hsl(322deg, 100%, 66%);
+    border: 1px solid hsl(322deg, 100%, 66%);
+    border-radius: 1.8rem;
+    padding: 1rem 4.1rem;
+  }
+  header div#lowerHeader img {
+    width: 44vw;
+  }
+}
+@media only screen and (min-height: 43rem) and (min-width: 73.75rem) {
+  header {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    background-image: url('../images/bg-hero-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: hsl(193deg, 100%, 96%);
+    padding-bottom: 2rem;
+  }
+  header div#topHeader {
+    width: 88%;
+    margin: 3.1rem 0rem 3.8rem 0rem;
+  }
+  header div#topHeader img {
+    width: 12.5rem;
+  }
+  header div#topHeader button {
+    box-shadow: 0rem 0.2rem 0.3rem lightgray;
+    color: hsl(192deg, 100%, 9%);
+    font-size: 0.85rem;
+    font-weight: 700;
+    background-color: hsl(0deg, 0%, 100%);
+    border: 1px solid hsl(0deg, 0%, 100%);
+    border-radius: 1.6rem;
+    padding: 0.8rem 4rem;
+  }
+  header div#topHeader button:hover {
+    color: hsl(208deg, 11%, 55%);
+  }
+  header div#lowerHeader {
+    width: 88%;
+  }
+  header div#lowerHeader div {
+    margin-right: 1.5rem;
+  }
+  header div#lowerHeader div h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: left;
+    margin: 3rem 2rem 1.5rem 0rem;
+  }
+  header div#lowerHeader div p {
+    text-align: left;
+    margin: 0rem;
+    padding-left: 0rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+  header div#lowerHeader div button {
+    margin: 2rem 0rem 3.5rem 0rem;
+    box-shadow: 0rem 0.2rem 0.3rem lightgray;
+    color: hsl(0deg, 0%, 100%);
+    font-size: 0.85rem;
+    font-weight: 700;
+    background-color: hsl(322deg, 100%, 66%);
+    border: 1px solid hsl(322deg, 100%, 66%);
+    border-radius: 1.8rem;
+    padding: 1rem 4.1rem;
+  }
+  header div#lowerHeader img {
+    width: 48vw;
+  }
+}
+
+main {
+  margin-top: 3.5rem;
+  /* ----------------------- Media Queries ----------------------- */
+}
+main div.section {
+  margin: 0rem 5vw 2.5rem 5vw;
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 1rem rgba(211, 211, 211, 0.5);
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+}
+main div.section div p {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+main div.section div p.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 0.9rem;
+}
+main div.section div p.content {
+  color: hsl(208deg, 11%, 55%);
+  font-weight: 300;
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  padding: 0rem 3rem;
+  margin-top: 0rem;
+}
+main div.section img {
+  width: 65vw;
+  margin-left: 12.5vw;
+  margin-bottom: 2rem;
+}
+main div.end {
+  position: relative;
+  bottom: -6.5rem;
+  width: 93vw;
+  margin: 2.5rem 2.5vw 2.5rem 2.5vw;
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 1rem rgba(211, 211, 211, 0.5);
+  background-color: hsl(0deg, 0%, 100%);
+}
+main div.end p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin: 2.5rem 0rem 0.5rem 0rem;
+  font-size: 1.1rem;
+}
+main div.end button {
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  margin: 1rem 0rem 2.5rem 0rem;
+  box-shadow: 0rem 0.2rem 0.3rem lightgray;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.7rem;
+  font-weight: 700;
+  background-color: hsl(322deg, 100%, 66%);
+  border: 1px solid hsl(322deg, 100%, 66%);
+  border-radius: 1.5rem;
+  padding: 0.8rem 3.3rem;
+}
+main div.end button:hover {
+  background-color: hsla(322deg, 100%, 66%, 0.6);
+  border-color: transparent;
+}
+main div:nth-child(3) {
+  margin-bottom: 0rem;
+}
+main div:nth-child(4) {
+  margin-top: 0rem;
+}
+@media only screen and (min-width: 41.25em) and (max-width: 53.75em) and (max-height: 26.25em) {
+  main {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+  }
+  main div.section {
+    width: 75vw;
+  }
+  main div.section img {
+    width: 40vw;
+    margin: 0rem 2rem 2rem 17.5vw;
+  }
+  main div.end {
+    width: 60vw;
+  }
+}
+@media only screen and (min-width: 47.813em) and (max-width: 63.938em) {
+  main {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    margin-top: 7rem;
+  }
+  main div.section {
+    width: 85vw;
+    box-shadow: 0rem 0rem 1rem rgba(211, 211, 211, 0.5);
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+  }
+  main div.section div {
+    width: 50vw;
+    margin-left: 0rem;
+  }
+  main div.section div p {
+    text-align: left;
+  }
+  main div.section div p.title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0rem 3rem;
+    margin-bottom: 0.9rem;
+    margin-top: 0rem;
+  }
+  main div.section div p.content {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0rem 3rem;
+  }
+  main div.section img {
+    width: 25vw;
+    margin: 0rem 2rem 2rem 2vw;
+  }
+  main div.section:nth-child(2) div p {
+    padding-left: 2rem;
+  }
+  main div.section:nth-child(2) img {
+    margin: 0rem 2rem 2rem 4vw;
+  }
+  main div.end {
+    bottom: -8rem;
+    width: 65vw;
+  }
+  main div.end p {
+    font-weight: 600;
+    margin: 4rem 0rem 1rem 0rem;
+    font-size: 1.5rem;
+  }
+  main div.end button {
+    margin: 1rem 0rem 2.5rem 0rem;
+    color: hsl(0deg, 0%, 100%);
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: hsl(322deg, 100%, 66%);
+    border: 1px solid hsl(322deg, 100%, 66%);
+    border-radius: 3rem;
+    padding: 1.1rem 4.8rem;
+  }
+  main div:nth-child(3) {
+    margin-bottom: 0rem;
+  }
+  main div:nth-child(4) {
+    margin-top: 2.7rem;
+  }
+}
+@media only screen and (min-width: 64em) and (max-width: 75em) and (min-height: 37.5em) {
+  main {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    margin-top: 10rem;
+  }
+  main div.section {
+    width: 80vw;
+    box-shadow: 0rem 0rem 1rem rgba(211, 211, 211, 0.5);
+    padding-bottom: 2rem;
+    padding-left: 5rem;
+  }
+  main div.section div {
+    width: 40vw;
+    margin-left: 0rem;
+  }
+  main div.section div p {
+    text-align: left;
+  }
+  main div.section div p.title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding: 0rem 3rem;
+    margin-bottom: 0.9rem;
+    margin-top: 0rem;
+  }
+  main div.section div p.content {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 0rem 3rem;
+  }
+  main div.section img {
+    width: 28vw;
+    margin: 0rem 2rem 2rem 2vw;
+  }
+  main div.section:nth-child(2) img {
+    margin: 0rem 2rem 2rem 4vw;
+  }
+  main div.end {
+    bottom: -8rem;
+    width: 65vw;
+  }
+  main div.end p {
+    font-weight: 600;
+    margin: 4rem 0rem 1rem 0rem;
+    font-size: 2rem;
+  }
+  main div.end button {
+    margin: 1rem 0rem 2.5rem 0rem;
+    color: hsl(0deg, 0%, 100%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: hsl(322deg, 100%, 66%);
+    border: 1px solid hsl(322deg, 100%, 66%);
+    border-radius: 3rem;
+    padding: 1.5rem 6.5rem;
+  }
+  main div:nth-child(3) {
+    margin-bottom: 0rem;
+  }
+  main div:nth-child(4) {
+    margin-top: 2.7rem;
+  }
+}
+@media only screen and (min-height: 43rem) and (min-width: 73.75rem) {
+  main {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    margin-top: 10rem;
+  }
+  main div.section {
+    width: 80vw;
+    box-shadow: 0rem 0rem 1rem rgba(211, 211, 211, 0.5);
+    padding-bottom: 2rem;
+    padding-left: 5rem;
+  }
+  main div.section div {
+    width: 40vw;
+    margin-left: 0rem;
+  }
+  main div.section div p {
+    text-align: left;
+  }
+  main div.section div p.title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding: 0rem 3rem;
+    margin-bottom: 0.9rem;
+    margin-top: 0rem;
+  }
+  main div.section div p.content {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding: 0rem 3rem;
+  }
+  main div.section img {
+    width: 28vw;
+    margin: 0rem 2rem 2rem 2vw;
+  }
+  main div.end {
+    bottom: -8rem;
+    width: 55vw;
+  }
+  main div.end p {
+    font-weight: 600;
+    margin: 4rem 0rem 1rem 0rem;
+    font-size: 2rem;
+  }
+  main div.end button {
+    margin: 1rem 0rem 2.5rem 0rem;
+    color: hsl(0deg, 0%, 100%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: hsl(322deg, 100%, 66%);
+    border: 1px solid hsl(322deg, 100%, 66%);
+    border-radius: 3rem;
+    padding: 1.5rem 6.5rem;
+  }
+  main div:nth-child(3) {
+    margin-bottom: 0rem;
+  }
+  main div:nth-child(4) {
+    margin-top: 2.7rem;
+  }
+}
+
+footer {
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 9rem;
+  background-color: hsl(192deg, 100%, 9%);
+  padding-left: 1.5rem;
+  color: hsl(0deg, 0%, 100%);
+  /* ----------------------- Media Queries ----------------------- */
+}
+footer div.footerContent .info .infoSection {
+  font-weight: 300;
+}
+footer div.footerContent .info .infoSection img {
+  margin: 0rem 1.5rem 0rem 0rem;
+}
+footer div.footerContent .info .infoSection img.loc {
+  margin-top: 1.4rem;
+}
+footer div.footerContent .info .infoSection p {
+  margin: 1rem 2.1rem 1rem 0rem;
+  line-height: 1.5rem;
+}
+footer div.footerContent .info :last-child {
+  margin-bottom: 2rem;
+}
+footer div.footerContent .list p a {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+footer div.footerContent .list p a:hover {
+  text-decoration: underline;
+}
+footer div.footerContent .list:last-child {
+  margin-bottom: 4rem;
+}
+footer div.footerContent .social {
+  width: 40%;
+  padding-left: 28%;
+  margin-bottom: 0.7rem;
+  margin-top: 3rem;
+}
+footer div.footerContent .social i {
+  cursor: pointer;
+  font-size: 0.75rem;
+  color: hsl(0deg, 0%, 100%);
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 0.9rem;
+  padding: 0.4rem 0.45rem;
+  margin: 0.5rem;
+}
+footer div.footerContent .social i.fa-facebook-f {
+  padding: 0.4rem 0.55rem;
+}
+footer div.footerContent .social i:hover {
+  border-color: hsl(322deg, 100%, 66%);
+  color: hsl(322deg, 100%, 66%);
+}
+footer img {
+  margin-bottom: 0.5rem;
+}
+footer img#logo {
+  width: 10rem;
+  filter: brightness(0) invert(1);
+}
+footer p.copyright {
+  width: 100%;
+  text-align: center;
+  font-size: 0.7rem;
+}
+footer p.attribution {
+  position: relative;
+  left: -0.75rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+footer p.attribution a {
+  color: skyblue;
+  text-decoration: none;
+}
+footer p.attribution a:hover {
+  text-decoration: underline;
+}
+@media only screen and (min-width: 41.25em) and (max-width: 53.75em) and (max-height: 26.25em) {
+  footer {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+    padding-left: 3rem;
+  }
+  footer div.footerContent .info .infoSection {
+    max-width: 60%;
+  }
+  footer div.footerContent .social {
+    width: 25%;
+    padding-left: 35%;
+  }
+}
+@media only screen and (min-width: 47.813em) and (max-width: 63.938em) {
+  footer {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    padding-top: 12rem;
+    background-color: hsl(192deg, 100%, 9%);
+    padding-left: 2rem;
+    color: hsl(0deg, 0%, 100%);
+  }
+  footer div.footerContent {
+    width: 95%;
+  }
+  footer div.footerContent .info {
+    width: 43%;
+  }
+  footer div.footerContent .info .infoSection img {
+    margin-right: 1rem;
+  }
+  footer div.footerContent .list {
+    margin-left: 1rem;
+  }
+  footer div.footerContent .social {
+    width: auto;
+    padding-left: 0%;
+    margin-top: 1rem;
+  }
+  footer div.footerContent :nth-child(2) {
+    margin-right: 1rem;
+    margin-left: 0rem;
+  }
+  footer img {
+    margin-bottom: 1.5rem;
+  }
+  footer img#logo {
+    width: 14rem;
+  }
+  footer p.copyright {
+    width: 95%;
+    text-align: right;
+  }
+  footer p.attribution {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 64em) and (max-width: 75em) and (min-height: 37.5em) {
+  footer {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    padding-top: 12rem;
+    background-color: hsl(192deg, 100%, 9%);
+    padding-left: 5rem;
+    color: hsl(0deg, 0%, 100%);
+  }
+  footer div.footerContent {
+    width: 90%;
+  }
+  footer div.footerContent .info {
+    width: 35%;
+  }
+  footer div.footerContent .social {
+    width: auto;
+    padding-left: 0%;
+    margin-top: 1rem;
+  }
+  footer img {
+    margin-bottom: 1.5rem;
+  }
+  footer img#logo {
+    width: 14rem;
+  }
+  footer p.copyright {
+    width: 90%;
+    text-align: right;
+  }
+  footer p.attribution {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-height: 43rem) and (min-width: 73.75rem) {
+  footer {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    padding-top: 12rem;
+    background-color: hsl(192deg, 100%, 9%);
+    padding-left: 8rem;
+    color: hsl(0deg, 0%, 100%);
+  }
+  footer div.footerContent {
+    width: 83%;
+  }
+  footer div.footerContent .info {
+    width: 35%;
+  }
+  footer div.footerContent .social {
+    width: auto;
+    padding-left: 0%;
+    margin-top: 1rem;
+  }
+  footer img {
+    margin-bottom: 1.5rem;
+  }
+  footer img#logo {
+    width: 14rem;
+  }
+  footer p.copyright {
+    width: 93%;
+    text-align: right;
+  }
+  footer p.attribution {
+    font-size: 0.8rem;
+  }
+}
+
+body {
+  margin: 0;
+}
