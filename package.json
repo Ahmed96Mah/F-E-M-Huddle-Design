@@ -1,0 +1,31 @@
+{
+  "type": "module",
+  "name": "f-e-m-huddle-design",
+  "version": "1.0.0",
+  "description": "A Responsive design challenge with a mobile-first approach using HTML & Sass",
+  "main": "",
+  "scripts": {
+    "prettier": "prettier --config .prettierrc.json --ignore-path .prettierignore --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmed96Mah/F-E-M-Huddle-Design.git"
+  },
+  "keywords": [
+    "Responsive-Design",
+    "Sass",
+    "Mobile-First"
+  ],
+  "author": "Ahmed Mahmoud Abdalwahab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ahmed96Mah/F-E-M-Huddle-Design/issues"
+  },
+  "homepage": "https://github.com/Ahmed96Mah/F-E-M-Huddle-Design#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.53.0"
+  }
+}
