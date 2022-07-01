@@ -1,0 +1,299 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+header {
+  background-image: url('../images/bg-hero-mobile.svg');
+  background-position-y: 35%;
+  background-repeat: no-repeat;
+  background-color: v.$pale-cyan-clr;
+  div {
+    &#topHeader {
+      width: 90%;
+      margin: 2rem 0rem;
+      img {
+        width: 7rem;
+      }
+      button {
+        cursor: pointer;
+        font-family: 'Open Sans', sans-serif;
+        box-shadow: 0rem 0.2rem 0.3rem lightgray;
+        @include m.buttonStyles(
+          v.$dark-cyan,
+          0.7rem,
+          700,
+          v.$white-clr,
+          v.$white-clr,
+          1rem,
+          0.4rem,
+          1.5rem
+        );
+        &:hover {
+          color: v.$grayish-blue;
+        }
+      }
+    }
+    &#lowerHeader {
+      font-family: 'Open Sans', sans-serif;
+      div {
+        h1 {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 600;
+          font-size: 1.5rem;
+          text-align: center;
+          margin: 3.5rem 2rem 1.5rem 2rem;
+        }
+        p {
+          text-align: center;
+          margin: 0rem;
+          padding: 0rem 2.6rem;
+          line-height: 1.5rem;
+          font-weight: 300;
+        }
+        button {
+          cursor: pointer;
+          font-family: 'Open Sans', sans-serif;
+          margin: 2rem 0rem 3.5rem 0rem;
+          box-shadow: 0rem 0.2rem 0.3rem lightgray;
+          @include m.buttonStyles(
+            v.$white-clr,
+            0.7rem,
+            700,
+            v.$pink-clr,
+            v.$pink-clr,
+            1.5rem,
+            0.8rem,
+            3.3rem
+          );
+          &:hover {
+            background-color: v.$light-pink-clr;
+            border-color: transparent;
+          }
+        }
+      }
+      img {
+        width: 80vw;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  /* ----------------------- Media Queries ----------------------- */
+  @include m.flippedMobileScreens(41.25em, 53.75em, 26.25em) {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+    div {
+      &#lowerHeader {
+        img {
+          width: 75vw;
+        }
+      }
+    }
+  }
+  @include m.padScreens(47.813em, 63.938em) {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    background-image: url('../images/bg-hero-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: v.$pale-cyan-clr;
+    padding-bottom: 2rem;
+    div {
+      &#topHeader {
+        width: 88%;
+        margin: 3.1rem 0rem 3.8rem 0rem;
+        img {
+          width: 10rem;
+        }
+        button {
+          box-shadow: 0rem 0.2rem 0.3rem lightgray;
+          @include m.buttonStyles(
+            v.$dark-cyan,
+            0.85rem,
+            700,
+            v.$white-clr,
+            v.$white-clr,
+            1.6rem,
+            0.7rem,
+            3rem
+          );
+          &:hover {
+            color: v.$grayish-blue;
+          }
+        }
+      }
+      &#lowerHeader {
+        width: 90%;
+        div {
+          margin-right: 2rem;
+          h1 {
+            font-weight: 600;
+            font-size: 1.8rem;
+            text-align: left;
+            margin: 3rem 1rem 1.5rem 0rem;
+          }
+          p {
+            text-align: left;
+            margin: 0rem;
+            padding-right: 1rem;
+            padding-left: 0rem;
+            line-height: 1.5rem;
+            font-weight: 400;
+            font-size: 1rem;
+          }
+          button {
+            margin: 2rem 0rem 3.5rem 0rem;
+            box-shadow: 0rem 0.2rem 0.3rem lightgray;
+            @include m.buttonStyles(
+              v.$white-clr,
+              0.85rem,
+              700,
+              v.$pink-clr,
+              v.$pink-clr,
+              1.8rem,
+              1rem,
+              4.1rem
+            );
+          }
+        }
+        img {
+          width: 40vw;
+        }
+      }
+    }
+  }
+  @include m.flippedPadScreens(64em, 75em, 37.5em) {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    background-image: url('../images/bg-hero-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: v.$pale-cyan-clr;
+    padding-bottom: 2rem;
+    div {
+      &#topHeader {
+        width: 88%;
+        margin: 3.1rem 0rem 3.8rem 0rem;
+        img {
+          width: 12.5rem;
+        }
+        button {
+          box-shadow: 0rem 0.2rem 0.3rem lightgray;
+          @include m.buttonStyles(
+            v.$dark-cyan,
+            0.85rem,
+            700,
+            v.$white-clr,
+            v.$white-clr,
+            1.6rem,
+            0.8rem,
+            4rem
+          );
+          &:hover {
+            color: v.$grayish-blue;
+          }
+        }
+      }
+      &#lowerHeader {
+        width: 88%;
+        div {
+          margin-right: 1.5rem;
+          h1 {
+            font-weight: 600;
+            font-size: 2.5rem;
+            text-align: left;
+            margin: 3rem 2rem 1.5rem 0rem;
+          }
+          p {
+            text-align: left;
+            margin: 0rem;
+            padding-left: 0rem;
+            line-height: 1.5rem;
+            font-weight: 400;
+            font-size: 1.1rem;
+          }
+          button {
+            margin: 2rem 0rem 3.5rem 0rem;
+            box-shadow: 0rem 0.2rem 0.3rem lightgray;
+            @include m.buttonStyles(
+              v.$white-clr,
+              0.85rem,
+              700,
+              v.$pink-clr,
+              v.$pink-clr,
+              1.8rem,
+              1rem,
+              4.1rem
+            );
+          }
+        }
+        img {
+          width: 44vw;
+        }
+      }
+    }
+  }
+  @include m.wideScreens(43rem, 73.75rem) {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    background-image: url('../images/bg-hero-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: v.$pale-cyan-clr;
+    padding-bottom: 2rem;
+    div {
+      &#topHeader {
+        width: 88%;
+        margin: 3.1rem 0rem 3.8rem 0rem;
+        img {
+          width: 12.5rem;
+        }
+        button {
+          box-shadow: 0rem 0.2rem 0.3rem lightgray;
+          @include m.buttonStyles(
+            v.$dark-cyan,
+            0.85rem,
+            700,
+            v.$white-clr,
+            v.$white-clr,
+            1.6rem,
+            0.8rem,
+            4rem
+          );
+          &:hover {
+            color: v.$grayish-blue;
+          }
+        }
+      }
+      &#lowerHeader {
+        width: 88%;
+        div {
+          margin-right: 1.5rem;
+          h1 {
+            font-weight: 600;
+            font-size: 2.5rem;
+            text-align: left;
+            margin: 3rem 2rem 1.5rem 0rem;
+          }
+          p {
+            text-align: left;
+            margin: 0rem;
+            padding-left: 0rem;
+            line-height: 1.5rem;
+            font-weight: 400;
+            font-size: 1.1rem;
+          }
+          button {
+            margin: 2rem 0rem 3.5rem 0rem;
+            box-shadow: 0rem 0.2rem 0.3rem lightgray;
+            @include m.buttonStyles(
+              v.$white-clr,
+              0.85rem,
+              700,
+              v.$pink-clr,
+              v.$pink-clr,
+              1.8rem,
+              1rem,
+              4.1rem
+            );
+          }
+        }
+        img {
+          width: 48vw;
+        }
+      }
+    }
+  }
+}
