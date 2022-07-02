@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
 /* Media Queries */
 body {
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-template-columns: 1fr;
-  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-areas: "header" "main" "footer";
   /* ----------------------- Media Queries ----------------------- */
 }
 body header {
@@ -80,12 +80,7 @@ body footer div.footerContent .social {
   justify-content: space-between;
   align-items: center;
 }
-@media only screen and (min-width: 41.25em) and (max-width: 53.75em) and (max-height: 26.25em) {
-  body {
-    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
-  }
-}
-@media only screen and (min-width: 47.813em) and (max-width: 63.938em) {
+@media only screen and (min-width: 47.813rem) and (max-width: 63.938rem) {
   body {
     /* ------ ($min-wdth, $max-wdth) ------ */
   }
@@ -132,7 +127,7 @@ body footer div.footerContent .social {
     align-items: center;
   }
 }
-@media only screen and (min-width: 64em) and (max-width: 75em) and (min-height: 37.5em) {
+@media only screen and (min-width: 64rem) and (max-width: 75rem) and (min-height: 37.5rem) {
   body {
     /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
   }
@@ -179,7 +174,7 @@ body footer div.footerContent .social {
     align-items: center;
   }
 }
-@media only screen and (min-height: 43rem) and (min-width: 73.75rem) {
+@media only screen and (min-height: 37.5rem) and (min-width: 73.75rem) {
   body {
     /* ------ ($min-hgt, $min-wdth) ------ */
   }
@@ -229,7 +224,7 @@ body footer div.footerContent .social {
 
 /* ------------ Colors ------------ */
 header {
-  background-image: url('../images/bg-hero-mobile.svg');
+  background-image: url("../images/bg-hero-mobile.svg");
   background-position-y: 35%;
   background-repeat: no-repeat;
   background-color: hsl(193deg, 100%, 96%);
@@ -244,7 +239,7 @@ header div#topHeader img {
 }
 header div#topHeader button {
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   box-shadow: 0rem 0.2rem 0.3rem lightgray;
   color: hsl(192deg, 100%, 9%);
   font-size: 0.7rem;
@@ -258,10 +253,10 @@ header div#topHeader button:hover {
   color: hsl(208deg, 11%, 55%);
 }
 header div#lowerHeader {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 header div#lowerHeader div h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   text-align: center;
@@ -276,7 +271,7 @@ header div#lowerHeader div p {
 }
 header div#lowerHeader div button {
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 2rem 0rem 3.5rem 0rem;
   box-shadow: 0rem 0.2rem 0.3rem lightgray;
   color: hsl(0deg, 0%, 100%);
@@ -295,7 +290,7 @@ header div#lowerHeader img {
   width: 80vw;
   margin-bottom: 2rem;
 }
-@media only screen and (min-width: 41.25em) and (max-width: 53.75em) and (max-height: 26.25em) {
+@media only screen and (min-width: 41.25rem) and (max-width: 53.75rem) and (max-height: 26.25rem) {
   header {
     /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
   }
@@ -303,10 +298,10 @@ header div#lowerHeader img {
     width: 75vw;
   }
 }
-@media only screen and (min-width: 47.813em) and (max-width: 63.938em) {
+@media only screen and (min-width: 47.813rem) and (max-width: 63.938rem) {
   header {
     /* ------ ($min-wdth, $max-wdth) ------ */
-    background-image: url('../images/bg-hero-desktop.svg');
+    background-image: url("../images/bg-hero-desktop.svg");
     background-repeat: no-repeat;
     background-color: hsl(193deg, 100%, 96%);
     padding-bottom: 2rem;
@@ -367,10 +362,10 @@ header div#lowerHeader img {
     width: 40vw;
   }
 }
-@media only screen and (min-width: 64em) and (max-width: 75em) and (min-height: 37.5em) {
+@media only screen and (min-width: 64rem) and (max-width: 75rem) and (min-height: 37.5rem) {
   header {
     /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
-    background-image: url('../images/bg-hero-desktop.svg');
+    background-image: url("../images/bg-hero-desktop.svg");
     background-repeat: no-repeat;
     background-color: hsl(193deg, 100%, 96%);
     padding-bottom: 2rem;
@@ -430,10 +425,10 @@ header div#lowerHeader img {
     width: 44vw;
   }
 }
-@media only screen and (min-height: 43rem) and (min-width: 73.75rem) {
+@media only screen and (min-height: 37.5rem) and (min-width: 73.75rem) {
   header {
     /* ------ ($min-hgt, $min-wdth) ------ */
-    background-image: url('../images/bg-hero-desktop.svg');
+    background-image: url("../images/bg-hero-desktop.svg");
     background-repeat: no-repeat;
     background-color: hsl(193deg, 100%, 96%);
     padding-bottom: 2rem;
@@ -507,10 +502,10 @@ main div.section {
 }
 main div.section div p {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 main div.section div p.title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 1.3rem;
   margin-bottom: 0.9rem;
@@ -538,14 +533,14 @@ main div.end {
   background-color: hsl(0deg, 0%, 100%);
 }
 main div.end p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   margin: 2.5rem 0rem 0.5rem 0rem;
   font-size: 1.1rem;
 }
 main div.end button {
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 1rem 0rem 2.5rem 0rem;
   box-shadow: 0rem 0.2rem 0.3rem lightgray;
   color: hsl(0deg, 0%, 100%);
@@ -566,7 +561,7 @@ main div:nth-child(3) {
 main div:nth-child(4) {
   margin-top: 0rem;
 }
-@media only screen and (min-width: 41.25em) and (max-width: 53.75em) and (max-height: 26.25em) {
+@media only screen and (min-width: 41.25rem) and (max-width: 53.75rem) and (max-height: 26.25rem) {
   main {
     /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
   }
@@ -581,7 +576,7 @@ main div:nth-child(4) {
     width: 60vw;
   }
 }
-@media only screen and (min-width: 47.813em) and (max-width: 63.938em) {
+@media only screen and (min-width: 47.813rem) and (max-width: 63.938rem) {
   main {
     /* ------ ($min-wdth, $max-wdth) ------ */
     margin-top: 7rem;
@@ -648,7 +643,7 @@ main div:nth-child(4) {
     margin-top: 2.7rem;
   }
 }
-@media only screen and (min-width: 64em) and (max-width: 75em) and (min-height: 37.5em) {
+@media only screen and (min-width: 64rem) and (max-width: 75rem) and (min-height: 37.5rem) {
   main {
     /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
     margin-top: 10rem;
@@ -712,7 +707,7 @@ main div:nth-child(4) {
     margin-top: 2.7rem;
   }
 }
-@media only screen and (min-height: 43rem) and (min-width: 73.75rem) {
+@media only screen and (min-height: 37.5rem) and (min-width: 73.75rem) {
   main {
     /* ------ ($min-hgt, $min-wdth) ------ */
     margin-top: 10rem;
@@ -775,7 +770,7 @@ main div:nth-child(4) {
 }
 
 footer {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding-top: 9rem;
   background-color: hsl(192deg, 100%, 9%);
   padding-left: 1.5rem;
@@ -858,7 +853,7 @@ footer p.attribution a {
 footer p.attribution a:hover {
   text-decoration: underline;
 }
-@media only screen and (min-width: 41.25em) and (max-width: 53.75em) and (max-height: 26.25em) {
+@media only screen and (min-width: 41.25rem) and (max-width: 53.75rem) and (max-height: 26.25rem) {
   footer {
     /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
     padding-left: 3rem;
@@ -871,7 +866,7 @@ footer p.attribution a:hover {
     padding-left: 35%;
   }
 }
-@media only screen and (min-width: 47.813em) and (max-width: 63.938em) {
+@media only screen and (min-width: 47.813rem) and (max-width: 63.938rem) {
   footer {
     /* ------ ($min-wdth, $max-wdth) ------ */
     padding-top: 12rem;
@@ -914,7 +909,7 @@ footer p.attribution a:hover {
     font-size: 0.8rem;
   }
 }
-@media only screen and (min-width: 64em) and (max-width: 75em) and (min-height: 37.5em) {
+@media only screen and (min-width: 64rem) and (max-width: 75rem) and (min-height: 37.5rem) {
   footer {
     /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
     padding-top: 12rem;
@@ -947,7 +942,7 @@ footer p.attribution a:hover {
     font-size: 0.8rem;
   }
 }
-@media only screen and (min-height: 43rem) and (min-width: 73.75rem) {
+@media only screen and (min-height: 37.5rem) and (min-width: 73.75rem) {
   footer {
     /* ------ ($min-hgt, $min-wdth) ------ */
     padding-top: 12rem;
