@@ -809,22 +809,46 @@ footer div.footerContent .social {
   padding-left: 28%;
   margin-bottom: 0.7rem;
   margin-top: 3rem;
+  /*
+  i {
+    cursor: pointer;
+    font-size: 0.75rem;
+    color: v.$white-clr;
+    border: 1px solid v.$white-clr;
+    border-radius: 0.9rem;
+    padding: 0.4rem 0.45rem;
+    margin: 0.5rem;
+    &.fa-facebook-f {
+      padding: 0.4rem 0.55rem;
+    }
+    &:hover {
+      border-color: v.$pink-clr;
+      color: v.$pink-clr;
+    }
+  }
+  */
 }
-footer div.footerContent .social i {
-  cursor: pointer;
-  font-size: 0.75rem;
+footer div.footerContent .social svg {
+  fill: currentColor;
   color: hsl(0deg, 0%, 100%);
   border: 1px solid hsl(0deg, 0%, 100%);
-  border-radius: 0.9rem;
-  padding: 0.4rem 0.45rem;
-  margin: 0.5rem;
+  border-radius: 1rem;
 }
-footer div.footerContent .social i.fa-facebook-f {
-  padding: 0.4rem 0.55rem;
+footer div.footerContent .social svg#facebook {
+  width: 0.6rem;
+  padding: 0.45rem 0.65rem;
 }
-footer div.footerContent .social i:hover {
-  border-color: hsl(322deg, 100%, 66%);
+footer div.footerContent .social svg#twitter {
+  width: 0.8rem;
+  padding: 0.55rem;
+}
+footer div.footerContent .social svg#instagram {
+  width: 0.9rem;
+  padding: 0.45rem 0.5rem;
+}
+footer div.footerContent .social svg:hover {
   color: hsl(322deg, 100%, 66%);
+  border-color: hsl(322deg, 100%, 66%);
 }
 footer img {
   margin-bottom: 0.5rem;
@@ -957,7 +981,7 @@ footer p.attribution a:hover {
     width: 35%;
   }
   footer div.footerContent .social {
-    width: auto;
+    width: 7rem;
     padding-left: 0%;
     margin-top: 1rem;
   }
