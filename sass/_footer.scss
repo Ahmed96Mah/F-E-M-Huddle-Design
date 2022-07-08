@@ -47,20 +47,26 @@ footer {
         padding-left: 28%;
         margin-bottom: 0.7rem;
         margin-top: 3rem;
-        i {
-          cursor: pointer;
-          font-size: 0.75rem;
+        svg {
+          fill: currentColor;
           color: v.$white-clr;
           border: 1px solid v.$white-clr;
-          border-radius: 0.9rem;
-          padding: 0.4rem 0.45rem;
-          margin: 0.5rem;
-          &.fa-facebook-f {
-            padding: 0.4rem 0.55rem;
+          border-radius: 1rem;
+          &#facebook{
+            width: 0.6rem;
+            padding: 0.45rem 0.65rem;
+          }
+          &#twitter{
+            width: 0.8rem;
+            padding: 0.55rem;
+          }
+          &#instagram{
+            width: 0.9rem;
+            padding: 0.45rem 0.5rem;
           }
           &:hover {
-            border-color: v.$pink-clr;
             color: v.$pink-clr;
+            border-color: v.$pink-clr;
           }
         }
       }
@@ -209,7 +215,7 @@ footer {
           width: 35%;
         }
         .social {
-          width: auto;
+          width: 7rem;
           padding-left: 0%;
           margin-top: 1rem;
         }
